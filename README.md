@@ -8,21 +8,21 @@ Ajouter un réseau dans metamask avec JavaScript.
 ```javascript
 
 function addNetwork() {
-        window.ethereum.request({
-                method: 'wallet_addEthereumChain',
-                params: [{
-                        chainId: "0x1469ca",
-                        chainName: "Kiln",
-                        nativeCurrency: {
-                                name: 'Testnet ETH',
-                                symbol: 'ETH',
-                                decimals: 18
-                        },
-                        rpcUrls: ["https:\/\/rpc.kiln.themerge.dev"],
-                        blockExplorerUrls: ["https:\/\/explorer.kiln.themerge.dev"]
-                }]
-        }).catch((error) => {
-                console.log(error)
-        })
-}
+    window.ethereum.request({
+      method: 'wallet_addEthereumChain',
+      params: [{
+      chainId: "0x146a2e",
+      chainName: "shandong-testnet",
+      nativeCurrency: {
+          name: 'Testnet ETH',
+          symbol: 'ETH',
+          decimals: 18
+      },
+      rpcUrls: ["https:\/\/rpc.shandong.ethdevops.io"],
+      blockExplorerUrls: ["https:\/\/explorer.shandong.ethdevops.io"]
+      }]
+    }).catch((error) => {
+      console.log(error)
+    })
+  }
 ```
